@@ -135,3 +135,9 @@ button[disabled] {
     font-size: 0.8rem;
   }
 }
+#message {
+    background-color: yellow;
+    width: 30vw;
+    text-align: center;
+    margin: auto;
+}

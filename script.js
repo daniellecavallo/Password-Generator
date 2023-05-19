@@ -22,14 +22,20 @@ function generatePassword(){
         
     }
     if (asknumber){
-        passwordsource += number
+        passwordsource += numbers
         
     }
-    if (asklowercase){
+    if (asksymbols){
         passwordsource += symbols
         
     }
-
+    for (i = 0; i < passwordlength; i++) {
+        finalpassword += passwordsource.charAt(Math.floor(Math.random ()*passwordsource.length))
+    }
+        return finalpassword
+    } else {
+        alert("INVALID CHARACTER LIMIT!")
+        return
     }
 
 }
